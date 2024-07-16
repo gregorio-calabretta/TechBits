@@ -19,7 +19,7 @@ public class GatewayServiceImpl implements GatewayService{
     }
 
     public Mono<ResponseEntity<List<ProductDto>>> getRemoteData() {
-        String url = "http://localhost:8082/products/";
+        String url = "http://localhost:8083/products/";
         return webClientBuilder.build()
                 .get()
                 .uri(url)
